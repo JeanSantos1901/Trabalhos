@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+
+}
+nav {
+    background-color: black;
+    color: gre;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: green;
+}
+
+section {
+    margin: 2rem;
+}
+
+button {
+    background-color: #0077b6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005a8c;
+}
+
+<style> 
+
+body { 
+    font-family: Arial, sans-serif; }
+#agenda { 
+    width: 100%; 
+    max-width: 800px; margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f2f2f2; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); } 
+#agenda h2 { 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 20px; } 
+#agenda table { 
+    width: 100%; 
+    border-collapse: collapse; } 
+#agenda th, #agenda td { 
+    border: 1px solid #ddd; 
+    padding: 8px; text-align: left; } 
+#agenda th { 
+    background-color: #4CAF50; 
+    color: white; } 
+#agenda tr:nth-child(even) { 
+    background-color: #f2f2f2;} 
+#agenda tr:hover { background-color: #ddd; } 
+
+#inscricao { 
+    padding: 20px; 
+    background-color: #f8f9fa; 
+    text-align: center; }
+#inscricao h2 {
+    color: #4c5054; 
+    margin-bottom: 20px; }
+#inscricao p { 
+    color: #868e96; 
+    margin-bottom: 20px; }
+#inscricao form { 
+    display: inline-block; 
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+#inscricao .form-group { 
+    margin-bottom: 15px; }
+#inscricao label { 
+    color: #6c757d; 
+    font-weight: bold; }
+#inscricao input[type="text"], 
+#inscricao input[type="email"] { 
+    width: 100%; 
+    padding: 5px; 
+    font-size: 14px; 
+    color: #6c757d; 
+    border: 1px solid #ced4da; 
+    border-radius: 3px; 
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); 
+    outline: none; 
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+
+</style>

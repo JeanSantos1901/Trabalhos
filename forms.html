@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Oficial da Expotec</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>EXPOTEC 2023</h1>
+        <p>IFRN CAMPUS AVANÇADO PARELHAS</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#inscricao">Inscrição</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre o Evento</h2>
+        <p>A EXPOTEC - Exposição Científica, Tecnológica e Cultural tem como objetivo incentivar e oportunizar que estudantes e professores da região tenham um espaço para divulgar sua produção científica, mobilizando as instituições locais de ensino a trabalharem com a metodologia científica e a qualificarem o seu ensino, através da popularização da ciência. Além de oportunizar a troca de experiências entre a escola com a comunidade produtiva e em geral, visando o empreendedorismo, através do aproveitamento de ideias inovadoras, que corroborem com o desenvolvimento social e com a vida dos brasileiros. O evento, que é aberto ao público em geral, é uma mostra dos trabalhos produzidos por alunos e servidores nas áreas do ensino, pesquisa e extensão por meio de Palestras, Oficinas, Salas Temáticas, Mostra de Curtas e Atividades Culturais.
+
+            A realização do evento materializa a expectativa de um calendário de eventos anual com produção interna e a crescente participação da comunidade, aproximando-a às ações e atividades desenvolvidas no Campus. </p>
+    </section>
+
+    <section id="agenda">
+        <h2>Agenda</h2>
+        <table border="1">
+            <tr>
+                <th>DATA</th>
+                <th>HORÁRIO</th>
+                <th>PROGRAMAÇÃO</th>
+            </tr>
+            <tr>
+                <td>20/11/2023</td>
+                <td> 07:30 - 08:30 </td>
+                <td> Abertura do evento e apresentações culturais </td>
+            </tr>
+            <tr>
+                <td>20/11/2023</td>
+                <td> 09:00 - 12:00</td>
+                <td> Apresentações dos projetos de pesquisa e exposição das disciplinas</td>
+            </tr>
+            <tr>
+                <td> 21/11/2023 </td>
+                <td> 08:00 - 09:30 </td>
+                <td> Palestra </tr>
+            </tr>
+            <tr>
+                <td> 22/11/2023 </td>
+                <td> 09:40 - 12:00 </td>
+                <td> Palestra com profissional de educação </td>
+            </tr>
+            <tr>
+                <td> 22/11/2023 </td>
+                <td> 07:00 - 12:00 </td>
+                <td> Minicursos e oficinas </td>
+            </tr>
+            <tr>
+                <td> 23/11/2023 </td>
+                <td> 08:00 - 10:00 </td>
+                <td> Sarau poético </td>
+            </tr>
+            <tr>
+                <td> 23/11/2023 </td>
+                <td> 10:00 - 12:00 </td>
+                <td> Palestra </td>
+            </tr>
+            <tr>
+                <td> 24/11/2023 </td>
+                <td> 08:00 - 10:00 </td>
+                <td> Gincana entre as turmas </td>
+            </tr>
+            <tr>
+                <td> 24/11/2023 </td>
+                <td> 10:00 - 11:00 </td>
+                <td> Encerramento do evento </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="inscricao">
+        <h2>Inscrição</h2>
+        <p>Inscreva-se agora para garantir seu lugar neste evento incrível!</p>
+        <div class="container">
+            <form>
+              <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@example.com" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula" placeholder="Sua matrícula" required>
+              </div>
+        
+              <button type="submit">Enviar</button>
+            </form>
+
+            <div id="mensagem-sucesso" style="display: none;">
+                Parabéns, sua inscrição foi realizada com sucesso, aproveite este evento incrível!
+              </div>
+
+              <script>
+                // Função para mostrar a mensagem de sucesso
+                function exibirMensagemDeSucesso() {
+                  var mensagemSucesso = document.getElementById('mensagem-sucesso');
+                  mensagemSucesso.style.display = 'block';
+                }
+              
+                // Evento de envio do formulário
+                document.querySelector('form').addEventListener('submit', function (event) {
+                  // Impede o envio do formulário padrão
+                  event.preventDefault();
+                  
+                  // Execute a função para mostrar a mensagem de sucesso
+                  exibirMensagemDeSucesso();
+                });
+              </script>
+
+
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Para mais informações, entre em contato conosco:</p>
+        <p>Email: diac.pass@ifrn.edu.br</p>
+    </section>
+</body>
+</html>
